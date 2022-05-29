@@ -1,0 +1,278 @@
+#web {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  #web::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -7vmin;
+    left: 12vmin;
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 50%;
+    border: 1.3vmin solid currentColor;
+    box-sizing: border-box;
+  }
+em {
+    font-family: 'Copperplate';
+    color: currentColor;
+    font-size: 10vmin;
+    position: relative;
+    font-style: normal;
+    width: 8vmin;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  em.planet {
+    -webkit-animation: planet-rotate 4s linear infinite;
+    animation: planet-rotate 4s linear infinite;
+    position: relative;
+  }
+  
+  em.planet::before {
+    content: "";
+    position: absolute;
+    top: -0.5vmin;
+    left: 3.5vmin;
+    z-index: -1;
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 50%;
+
+  }
+  
+  em.planet.left {
+    -webkit-transform-origin: 16vmin 5vmin;
+    transform-origin: 16vmin 5vmin;
+  }
+  
+  em.planet.right {
+    -webkit-transform-origin: -8vmin 5vmin;
+    transform-origin: -8vmin 5vmin;
+  }
+  @-webkit-keyframes planet-rotate {
+    to {
+      -webkit-transform: rotate(1turn);
+    }
+  }
+  
+  @keyframes planet-rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+.header {
+    display: flex;
+    position: relative;
+    margin: 0 auto 10rem;
+    width: 120rem;
+    max-width: 100%;
+    height: 45rem;
+    left: 0;
+    top: 0;
+overflow: hidden;
+    z-index: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/fonnn.png") no-repeat 50% / cover var(--neatural-gray);
+
+}
+:root {
+
+    --black: 0;
+    --neatural-gray: hsl(var(--black), 0%, 58%);
+  }
+.container-one {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.header__navigation{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+.text-up {
+    display: flex;
+    align-items: flex-start;
+    margin:0 auto;
+}
+
+.phone-up {
+    display: flex;
+    margin:0 auto;
+}
+.title{
+    margin-top: 8rem;
+margin-right: 50rem;
+}
+.text-down {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -7.25rem;
+    margin-bottom: 6rem;
+    margin-left: 36rem;
+
+}
+
+.adress {
+    display: flex;
+
+}
+.adress:hover {
+    color: #FF8C00;
+}
+.number {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4.345rem;
+
+}
+.number:hover {
+    color: #FF8C00;
+}
+.email a {
+    
+    margin-left:2.1875rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-decoration: none;
+}
+.email a:hover {
+    color: #FF8C00;
+}
+.header__navvv {
+    display: flex;
+    justify-content: space-between;
+    height: 1.1875rem;
+    margin: 0.625rem auto;
+    padding: 0 0 0 6.25rem;
+
+}
+.navig-link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.header__btn-one {
+    text-align: center;
+    width: 11.125rem;
+    height: 2.5rem;
+    background: url(../img/button-header.png);
+    outline: none;
+    Border: none;
+    color: #FFFFFF;
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    margin-left: -1.25rem;
+    transition: 1s;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.header__btn-one:hover {
+    transform: scale(1.2);
+}
+.header__btn-one:hover {
+    color: rgb(243, 182, 98);
+    transition: 1s;
+}
+.block-two{
+    display: flex;
+    
+}
+
+.aliexpress-logo{
+    display: flex;
+    flex-direction: column;
+align-items: flex-start; 
+margin-top:6.5rem;
+}
+.text-logo{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 3.375rem;
+line-height: 4rem;
+text-transform: uppercase;
+
+
+color: #FFFFFF;
+}
+.blocks-two .text-up-btn p{
+   font-family: 'Copperplate';
+    font-weight:700;
+    width: 20.5625rem;
+     text-align: left;
+     font-size: 1.375rem; 
+     margin:1.5rem 0.9375rem;
+     color:white;
+}
+.adress-text{
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    margin-right: 2.5rem;
+    color:white;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.adress-text:hover {
+    color: #FF8C00;
+}
+.logo{
+    display: flex;
+}
+.text-number a{
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    color: white;
+}
+.text-number a:hover {
+    color: #FF8C00;
+}
+.header__btn-two {
+    text-align: center;
+    width: 16.9375rem;
+    height: 3.75rem;
+    background: url(../img/button-header-2.png);
+    Border: none;
+    color: #FFFFFF;
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    margin-left:0.9375rem;    
+    transition: 1s;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.header__btn-two:hover {
+    transform: scale(1.2);
+}
+.header__btn-two:hover {
+    color: rgb(243, 182, 98);
+    transition: 1s;
+}

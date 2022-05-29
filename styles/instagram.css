@@ -1,0 +1,48 @@
+.box {
+    width: 1162px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-paragraph{
+    text-align: center;
+    font-family: 'Copperplate';
+    font-weight: bold;
+    font-size: 2.1875rem;
+    margin-bottom: 24px;
+    margin-top: 2rem;
+}
+
+.header-line{
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+    width: 87px;
+}
+
+.header-instagram__list {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header-instagram__text {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px 0 10px;
+    
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.content {
+    margin: 67px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__item {
+    width: 283px;
+    height: 284px;
+    margin: 0 0 10px 7.5px;
+}
+
+

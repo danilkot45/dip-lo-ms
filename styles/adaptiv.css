@@ -1,0 +1,511 @@
+@media screen and (max-width:1073px) {
+    .block__one-left{
+        margin:0 auto;
+    }
+    .block__one-right{
+        margin:0 auto;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .header{
+        margin: 0 auto;
+    }
+.title{
+    margin-bottom:10rem;
+}
+.white-fon{
+    display:none;
+}
+
+    .aliexpress-logo {
+        width: 100%;
+        margin-top: 1.875rem;
+    }
+
+    .block__one-right {
+        margin: 0 auto;
+    }
+
+    .block__one-left {
+        margin: 0 auto;
+        border: none;
+    }
+
+    .container-three {
+        height: auto;
+    }
+
+    .fon-block-two {
+        width: 100%;
+        left: 0;
+    }
+
+
+    .block__one-left-ticket {
+        margin: 0 -5.625rem 0 0;
+    }
+
+    .block-blocks-one,
+    .block-blocks-two {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .block-btn-download {
+        margin: 1.25rem auto;
+    }
+
+    .footer-block-svg-two {
+        margin: 0;
+    }
+
+    .foot {
+        /* flex-direction: column; */
+        margin: 0;
+    }
+
+    .footer-text {
+        font-size: 1.25rem;
+    }
+
+    .block-three-group-one {
+        flex-direction: column;
+    }
+
+    .block-three-group-two {
+        flex-direction: column;
+    }
+
+    .block-three-main-block-one {
+        border: none;
+        margin: 0 auto;
+    }
+
+    .block-three-main-block-two {
+        margin: 1.25rem auto;
+        height: auto;
+    }
+
+    .block-three-up-text {
+        font-size: 1rem;
+        width: 12.5rem;
+    }
+
+    .block-three-main-block {
+        margin: 0 auto;
+    }
+
+    .message {
+        margin: 0 auto;
+    }
+
+    .block-three-footer-block {
+        margin: 0 auto;
+    }
+
+    .block-three-footer {
+        margin: 0;
+    }
+
+    .misheniu {
+        display: none;
+    }
+
+    .process__text-one {
+        margin: 2.5rem auto;
+    }
+
+    .process__text-one h3 {
+        font-size: 2.0625rem;
+    }
+
+    .process__txt-main {
+        font-size: 1.375rem;
+    }
+
+    .chislo1 {
+        left: 0.25rem;
+        top: 9.1875rem;
+    }
+
+    .process__text-five {
+        width: 80%;
+        position: absolute;
+        top: 9.125rem;
+        margin: 0 4.8125rem;
+        text-align: start;
+    }
+
+    .chislo2 {
+        left: 0.25rem;
+    }
+
+    .process__text-three {
+        width: 80%;
+        position: absolute;
+        top: 16.5rem;
+        left: 0;
+        margin: 0 4.8125rem;
+        text-align: start;
+    }
+
+    .chislo3 {
+        left: 0.25rem;
+        top: 24.125rem;
+    }
+
+    .process__text-two {
+        width: 80%;
+        position: absolute;
+        left: 0;
+        margin: 0 4.8125rem;
+        top: 24.125rem;
+    }
+
+    .chislo4 {
+        left: 0.25rem;
+        top: 31.25rem;
+    }
+
+    .process__text-four {
+        width: 80%;
+        position: absolute;
+        margin: 0 4.8125rem;
+        top: 31.25rem;
+    }
+
+    .paket-carusel {
+        left: 0;
+        z-index: -2;
+    }
+
+    .anim-text p {
+        width: 100%;
+    }
+
+    .numbers {
+        font-size: 1.875rem;
+    }
+
+    .container-seven {
+        height: auto;
+    }
+
+    .block-shag1 {
+        margin: 0;
+    }
+
+    .block-shag1-text,
+    .block-shag2-text {
+        width: 16.5rem;
+    }
+
+    .footer__nav {
+        padding: 0;
+    }
+
+    .footer__nav nav {
+        display: none;
+
+    }
+
+    .footer {
+        margin: 0;
+        height: auto;
+    }
+
+    .footer-title h1 {
+        font-size: 2.5rem;
+        line-height: 0;
+        margin-left: -5rem;
+    }
+
+    .footer-email a {
+        margin-top: -1rem;
+    }
+
+    .footer__navigation {
+        display: flex;
+    }
+
+    .footer-adress {
+        margin: 1.1rem auto;
+    }
+
+    .footer-prava {
+        margin: 0 auto;
+    }
+
+    .footer__text-down {
+        flex-direction: column-reverse;
+    }
+
+    .facebook {
+        display: flex;
+        margin-top: -2rem;
+    }
+
+    .form__line-box {
+        flex-direction: column;
+    }
+
+    .form {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .form__forma {
+        height: 46rem;
+        width: 100%;
+    }
+
+    .form__input {
+        width: 100%;
+    }
+
+    .form__line-box {
+        margin: 1.7rem 0;
+    }
+
+    .main-form-txt {
+        width: 80%;
+        font-size: 1.1rem;
+        margin: 0 auto;
+    }
+
+    .form__photo-krug img {
+        position: absolute;
+        left: -12.5rem;
+    }
+
+    .form__btn {
+        margin-top: 0.625rem;
+    }
+
+    .form__input-box {
+        margin: 0.5rem auto;
+    }
+
+    .form__line-box-text {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .call {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main-form-txt {
+        width: 80%;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .title{
+        margin:5rem auto;
+
+    }
+    .title-text-shag h3{
+        font-size: 1.2rem;
+    }
+    em{
+        font-size: 15vmin;
+        width: 16vmin;
+    }
+    em.planet.left {
+        -webkit-transform-origin: 32vmin 9vmin;
+        transform-origin: 32vmin 9vmin;
+        }
+        em.planet.right {
+            -webkit-transform-origin:-16vmin 9vmin;
+            transform-origin: -16vmin 9vmin;
+            }
+            #web::before{
+                top: -17vmin;
+                left: 22.7vmin;
+                width: 51vmin;
+                height: 51vmin;
+            }
+            .blocks-two .text-up-btn p{
+                width: 20rem;
+            }
+    .text-down {
+        display: none;
+    }
+
+    .aliexpress-logo {
+        margin-top: 3.125rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .icon-g32 {
+        font-size: 3.75rem;
+    }
+
+    .icon-g41 {
+        font-size: 3.125rem;
+    }
+
+    .text-logo {
+        font-size: 2.5rem;
+        margin: 1.25rem 0 0 0;
+    }
+
+    .block-two .text-up-btn p{
+        width: 17rem
+    }
+
+    .block__one-text-left p {
+        width: 20rem;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+
+
+    .block__one-right h3 {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
+    .block-btn-download {
+        margin: 1.25rem 0;
+    }
+
+    .block-blocks-one,
+    .block-blocks-two {
+        width: 20rem;
+        margin: 0;
+    }
+
+    .block-two-title h2 {
+        max-width: 20rem;
+        font-size: 1.75rem;
+    }
+
+    .footer-text {
+        font-size: 0.8125rem;
+    }
+
+
+
+    .block-three-main-block-one {
+        border: none;
+        margin: 0;
+        height: auto;
+    }
+
+    .block-three-main-block-two {
+        margin: 0;
+    }
+
+    .block-three-up-text {
+        font-size: 1rem;
+        width: 12.5rem;
+    }
+
+    .block-three-main-block {
+        margin: 0;
+    }
+
+    .message {
+        margin: 0;
+    }
+
+    .block-three-footer-block {
+        margin: 0;
+    }
+
+    .block-three-label-one {
+        margin: 0;
+    }
+
+    .block-three-krug-txt {
+        margin: 0;
+    }
+
+    .block-three-label-two {
+        margin: 0;
+    }
+
+    .block-three-menu-block {
+        margin: 0;
+    }
+
+    .block-three-krug-txt {
+        margin: 1.25rem;
+    }
+
+    .block-three-up,
+    .block-three-btn {
+        margin: 0.625rem 0;
+    }
+
+    .footer-txt-one {
+        font-size: 0.8125rem;
+    }
+
+    .footer-txt-two {
+        width: 13.75rem;
+        font-size: 0.625rem;
+    }
+
+    .block-three-menu-block {
+        width: 20rem;
+    }
+
+    .block-three-label-two {
+        width: 20rem;
+        font-size: 0.875rem;
+    }
+
+    .fon-block-two {
+        width: 100%;
+        left: 0;
+        top: 37%;
+    }
+
+
+
+    .process__text-one h3 {
+        font-size: 1.3125rem;
+    }
+
+    .process__txt-main {
+
+        font-size: 0.8125rem;
+    }
+
+    .paket-carusel img {
+        width: 50%;
+        left: 0;
+        z-index: -2;
+    }
+
+    .numbers {
+        font-size: 1.5625rem;
+    }
+
+    .footer {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .instruction-shag {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        ;
+    }
+
+    .block-shag1 {
+        margin: 1rem auto;
+    }
+
+    .block-icon {
+        display: none;
+    }
+}

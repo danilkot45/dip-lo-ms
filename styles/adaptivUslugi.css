@@ -1,0 +1,81 @@
+@media screen and (max-width: 768px) {
+    
+    .main {
+        width: 100%;
+    }
+
+    .main-block {
+        justify-content: center;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    .grid-tovary {
+        padding: 10px;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas: "tovary1"
+            "tovary2"
+            "tovary3"
+            "tovary4"
+            "tovary5 ";
+
+    }
+
+    .header-two {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .group-body-two {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .header__btn {
+        padding: 0;
+        margin: 0;
+        left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .box nav{
+        display:contents;
+        width: 100%;
+    }
+    .content__item {
+        width: 133px;
+        height: 133px;
+    }
+
+    .grid-tovary {
+        padding:0;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas: "tovary1"
+            "tovary2"
+            "tovary3"
+            "tovary4"
+            "tovary5 ";
+
+    }
+
+    .head__item p {
+        font-size: 0.6875rem;
+    }
+
+    .header-text-down{
+        font-size:0.75rem;
+    }
+}

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/fontello.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/block-one.css">
+    <link rel="stylesheet" href="./styles/block-two.css">
+    <link rel="stylesheet" href="./styles/block-three.css">
+    <link rel="stylesheet" href="./styles/block-four.css">
+    <link rel="stylesheet" href="./styles/block-five.css">
+    <link rel="stylesheet" href="./styles/block-six.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/adaptiv.css">
+    <link rel="stylesheet" href="./styles/style-gamburger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="index.js"></script>
+<script src="menu.js"></script> 
+    <title>Главная</title>
+</head>
+
+<body style="background:rgb(3,7,37);">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLabel">Обратная связь</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="index.html" method="get" class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ваше имя"
+                                required>
+                            <div class="valid-feedback">
+                                Отлично!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="validationCustom02"
+                                pattern="[\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
+                                placeholder="+79123456789" required>
+                            <div class="valid-feedback">
+                                Отлично!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Пожалуйста,введите вашу почту.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">Тип автомобиля</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Выберите тип автомобиля</option>
+                                <option value="it-spec">Седан</option>
+                                <option value="doctor">Лифтбек</option>
+                                <option value="bankir">Хэтчбек</option>
+                                <option value="pred">Универсал</option>
+                                <option value="b">Купе</option>
+                                <option value="c">Кроссовер</option>
+                                <option value="d">Внедорожник</option>
+                                <option value="e">Фургон</option>
+                                <option value="f">Пикап</option>
+                                <option value="g">Прочее</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Пожалуйста, выберите тип автомобиля
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit" onclick="Form()">Отправить форму</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+
+        <section class="container-one">
+            <div class="header__navigation">
+                <div class="text-up">
+                    <div class="title">
+                        <h1 id="web">
+
+                            <em>C</em>
+                            <em class="planet left">O</em>
+                            <em>S</em>
+                            <em>M</em>
+                            <em class="planet right">O</em>
+                            <em>S</em>
+                        </h1>
+                    </div>
+                    <div class="menu-burger__header">
+                        <span></span>
+                    </div>
+                    <div class="header__navvv">
+                        <nav class="header__nav">
+                            <ul class="menu header__menu">
+                                <li> <a class="navig-link " href="index.html">Главная</a></li>
+                                <li> <a class="navig-link " href="uslugi.html">Услуги</a></li>
+                                    <!-- CSS - уровень 2 (сложные селекторы) - Задание 1 -->
+                                <li> <a class="navig-link" onclick="location.href='#onas'">О нас</a></li>
+                                <li><a class="navig-link" onclick="location.href='#whatweknow'">Что мы умеем</a></li>
+                                <li><a class="navig-link" onclick="location.href='#work'">Как это работает</a></li>
+                                <li> <a class="navig-link" onclick="location.href='#aliex'">Преимущества</a></li>
+                                    <!-- CSS - уровень 2 (сложные селекторы) - Задание 1 -->
+                                <li><a class="navig-link" onclick="location.href='#contacts-sto'">Контакты СТО</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="text-down">
+                    <div class="adress">
+                        <div class="adress-photo"
+                            style="background:white;border-radius:50%;width:2.2rem;height:2.2rem;">
+                            <div style="margin-left: -0.1rem;margin-top:0.4rem;" class="icon-vector"></div>
+                        </div>
+                        <div class="adress-text">г. Cаранск, ул. Пролетарская, 120 с. 1 </div>
+                    </div>
+                    <div class="number">
+                        <div class="phone-up">
+                            <div class="photo-number"
+                                style="background: white;border-radius: 50%;width: 2.2rem;height: 2.2rem;margin: 0 0.5rem;">
+                                <div style="font-size: 1.5rem;" class="icon-phone"></div>
+                            </div>
+                            <div class="text-number"><a class="nav-call"
+                                    href="tel:+71231231288">8(123) 123-12-88</a></div>
+                        </div>
+                        <div class="phone-down">
+                            <div class="email"> <a href="index.html">info@provodnik.ru</a> </div>
+                        </div>
+                    </div>
+                    <div class="call"> <button class="header__btn-one" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Обратный
+                            звонок</button></div>
+                </div>
+            </div>
+            <div class="blocks-two">
+                <div class="aliexpress-logo">
+                    <div class="text-logo">
+                        <h3 style="font-family:'Copperplate';text-align: left;font-size: 1.2rem;">Наш сервис
+                            <span class="txt-rotate" data-period="1500"
+                                data-rotate='[  "рекомендуют другим!","имеет множество наград!"," имеет новое оборудование!", "просто КОСМОС!!!!!" ]'>
+                            </span>
+                        </h3>
+                    </div>
+                    <!-- [  "хочешь проверить техническое состояние своей машины?","хочешь  качественно починить свою любимую машину?","хочешь переобуть резину?", "ищешь сервис, где адекватные цены на услуги и товары?" ] -->
+                    <div class="text-up-btn">
+                        <p> Умный автосервис COSMOS в вашем телефоне. Сохраним время с заботой о качестве.</p>
+                    </div>
+                    <div class="i-aliexpress"> <button class="header__btn-two" type="submit"
+                            onclick="location.href='#onas'">Подробнее о COSMOS</button></div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container-two" id="whatweknow">
+            <div class="block">
+
+                <div class="block__one-left">
+                    <div class="block__one-left-ticket">
+                        Cитуация
+                    </div>
+                    <div class="foto-devushki"></div>
+                    <div class="block__one-text-left">
+                        <p>Хотите узнать состояние подвески или двигателя?</p>
+                        <p>Хотите поменять резину или расходные материалы?</p>
+                        <p>Сломалась машина?</p>
+                        <p>Ищите сервис где дешево и качественно?</p>
+
+                    </div>
+                </div>
+                <div class="block__one-right">
+                    <div class="ticket-reshenie">Решение</div>
+                    <div class="reshenie-first">
+                        <div class="photo-reshenie"> <object type="image/svg+xml" class="photo-resh-one"
+                                data="./svg/Component.svg"></object></div>
+                        <div class="text-reshenie">
+                            <div class="text-reshenie-one">
+                                <h2>Точнее, их два.</h2>
+                            </div>
+                            <div class="text-reshenie-two">
+                                <h3>
+                                    <b>COSMOS</b> поможет с любой задачей: от техосмотра, шиномонтажа, химчистки до
+                                    сложного слесарного и кузовного ремонта.
+                                </h3>
+                                <h3>Самое главное- <b>Цены на запчасти и ремонт ниже чем у других сервисов!</b></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reshenie-second">
+                        <div class="photo-reshenie">
+                            <object type="image/svg+xml" class="photo-resh-two" data="./svg/Component-2.svg"></object>
+                        </div>
+                        <div class="text-reshenie-three">
+                            <h3>Мы работаем с любыми марками и моделями легковых автомобилей.<b> Это отличная новость
+                                    для тех, кому отказывали в ремонте в других сервисах!</b>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aliex" class="container-three">
+            
+            <div class="block-two">
+                <div class="block-two-title">
+                    <h2>Наши преимущества</h2>
+                </div>
+                <div class="block-blocks-one">
+                    <div class="block-blocks-left">
+                        <div class="block-photo-left"><img class="icon-6" src="./img/time.png" alt=""></div>
+                        <div class="block-text-right">
+                            <p><b>Экономия времени</b> </p>
+                            <p>Решим любые задачи, связанные с автомобилем и подберем для вас лучшее решение.</p>
+                        </div>
+                    </div>
+                    <div class="block-blocks-right">
+                        <div class="block-photo-left"><img class="icon-6" src="./img/money.png" alt=""></div>
+                        <div class="block-text-right">
+                            <p><b>Снижение расходов</b> </p>
+                            <p> Экономия времени и снижение расходов
+                                не в ущерб качеству - наша главная задача.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-blocks-two">
+                    <div class="block-blocks-left">
+                        <div class="block-photo-left"><img class="icon-6" src="./img/repair.png" alt=""></div>
+                        <div class="block-text-right">
+                            <p><b>Проверенные поставщики</b></p>
+                            <p> Мы работаем только с проверенными поставщиками и даем гарантию на все виды работ и
+                                материалов. </p>
+                        </div>
+                    </div>
+                    <div class="block-blocks-right">
+                        <div class="block-photo-left"><img class="icon-6" src="./img/support.png" alt=""></div>
+                        <div class="block-text-right">
+                            <p><b>Полная поддержка</b></p>
+                            <p> Проследим за выполнением работ, проконсультируем по всем вопросам в ходе ремонта.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-blocks-two">
+                    <div class="block-blocks-left">
+                        <div class="block-photo-left"><img class="icon-6" src="./img/garant.png" alt=""></div>
+                        <div class="block-text-right">
+                            <p><b>Гарантия качества</b></p>
+                            <p> Наши специалисты проверяют качество ремонта каждого автомобиля перед выдачей. </p>
+                        </div>
+                    </div>
+                    <div class="block-blocks-right">
+                        <div class="block-photo-left"><img class="icon-6" src="./img/vod.png" alt=""></div>
+                        <div class="block-text-right">
+                            <p><b>Профессиональные водители</b></p>
+                            <p>Все без исключения водители - профессионалы, с безаварийным стажем вождения более 5 лет.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="container-six">
+            <div class="white-fon"></div>
+            <div class="container" style="max-width:100%;width:73.125rem;margin:3rem auto;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="text-title-carusel" id="onas">
+                                <h3>О нас</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators" style="bottom:-4.375rem;">
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                                    style="background-color:#2e60e7; border-radius: 50%; width:0.75rem;height: 0.75rem;"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                                    style="background-color:#2e60e7; border-radius: 50%; width:0.75rem;height: 0.75rem;"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+                                    style="background-color:#2e60e7; border-radius: 50%; width:0.75rem;height: 0.75rem;"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"
+                                    style="background-color:#2e60e7; border-radius: 50%; width:0.75rem;height: 0.75rem;"></button>
+                            </div>
+
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carusel">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3 align-self-center">
+                                                    <img style="width:278px" src="./img/LOGO.png"alt="h&m"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                    </div>
+                                                    <div class="row-lg-6 g-0">
+                                                        <div class="anim-text">
+                                                            <p>Независимый, современный, сертифицированный автосервис «COSMOS» создан в 2016 году. 
+                                                                За более чем 5 лет успешной работы мы завоевали заслуженную репутацию надёжного партнёра, всегда выполняющего взятые на себя обязательства, полностью отвечающего требованиям клиентов. 
+                                                                Выполняем ремонт и техническое обслуживание легковых автомобилей и коммерческого транспорта в Саранске</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-left">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 0.625rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group6">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="numbers">30000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center "
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem;color:#2e60e7">
+                                                                        Радостных клиентов</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-right">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 0.625rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group7">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="numbers">8000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 g-0 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem; align-items: center;color:#2e60e7">
+                                                                        Починенных моторов</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3 align-self-center">
+                                                    <img style="width:278px" src="./img/LOGO.png"alt="h&m">
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                    </div>
+                                                    <div class="row g-0">
+                                                        <div class="anim-text">
+                                                            <p><b>Автосервис «COSMOS» осуществляет:</b><br>
+                                                                комплексный ремонт любых автомобилей;<br>
+                                                                профессиональный подбор запчастей, расходных материалов и смазывающих жидкостей;<br>
+                                                                консультирование по любым вопросам, касающихся ремонта, обслуживания и закупки запчастей для автомобилей.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-left">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 0.625rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group8">
+                                                                    </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <div class="numbers">4000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem;color:#2e60e7">
+                                                                        Починенных КПП</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-right">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 0.625rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group9">
+                                                                    </div>
+                                                                    <div class="col-md-6 ">
+                                                                        <div class="numbers">6000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem; align-items: center;color:#2e60e7">
+                                                                        Успешного ремонта подвески</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3 align-self-center">
+                                                    <img style="width:278px" src="./img/LOGO.png"alt="h&m">
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row g-0">
+                                                    </div>
+                                                    <div class="row g-0">
+                                                        <div class="anim-text">
+                                                            <p><b>Почему с нами выгодно?</b><br>
+                                                                Высокая квалификация специалистов.<br>
+                                                                Честная оценка стоимости ремонта.<br>
+                                                                Минимальные сроки работы.<br>
+                                                                Индивидуальный подход.<br>
+                                                                Соблюдение технологий, рекомендованных заводом-изготовителем.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-left">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 0.625rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group11">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="numbers">5000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem;color:#2e60e7">
+                                                                        Успешного шиномонтажа</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-right">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 0.625rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group12">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="numbers">6000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem; align-items: center;color:#2e60e7">
+                                                                        Замененных расходных материалов</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3 align-self-center">
+                                                    <img style="width:278px" src="./img/LOGO.png"alt="h&m">
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="anim-text">
+                                                            <p>Автосервис «COSMOS» — команда профессионалов, знающих и умеющих работать быстро и качественно.<br>
+                                                                 Мы гарантируем надежную работу вашего автомобиля, побывавшего в наших мастерских! <br>
+                                                                 Наша работа — это высокая точность, скорость, надежность, качество, применение самых современных технологий и оборудования.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-left">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 1.25rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group13">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="numbers">3000+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem;color:#2e60e7">
+                                                                        Очищенных салонов</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="anim-kolvo-right">
+                                                                <div class="row">
+                                                                    <div class="col-1"
+                                                                        style="margin:0.625rem 1.25rem 0 0 ">
+                                                                        <img src="./img/Group.png" alt="group14">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="numbers">10+</div>
+                                                                    </div>
+                                                                    <div class="col-3 align-self-center"
+                                                                        style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 500;font-size: 1rem;line-height: 1.1875rem; align-items: center;color:#2e60e7">
+                                                                       Надежных партнеров</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-seven" id="work">
+            <div class="instruction">
+
+                <div class="title-text-shag" style="margin:3.125rem 0;">
+                    <h3>Ремонт авто теперь выглядит так</h3>
+                </div>
+                <div class="instruction-shag">
+                    <div class="block-shag1">
+                        <div class="block-shag1-outer">
+                            <div class="block-shag1-inner">1</div>
+                        </div>
+                        <div class="main-text">
+                            <h3>Заявка</h3>
+                            <p class="block-shag1-text"> Позвоните или напишите нам в чат, назовите промокод, и мы с
+                                радостью все организуем.</p>
+                        </div>
+                    </div>
+                    <img src="./svg/strelka.svg" alt="#" class="block-icon">
+                    <div class="block-shag2">
+                        <div class="block-shag2-outer">
+                            <div class="block-shag2-inner">2</div>
+                        </div>
+                        <div class="main-text">
+                            <h3>Передача</h3>
+                            <p class="block-shag2-text">
+                                Приедет наш водитель-эксперт, осмотрит вместе с вами автомобиль, зафиксирует все
+                                пожелания и доставит автомобиль в сервис.</p>
+                        </div>
+                    </div>
+                    <img src="./svg/strelka.svg" alt="#" class="block-icon">
+                    <div class="block-shag1">
+                        <div class="block-shag1-outer">
+                            <div class="block-shag1-inner">3</div>
+                        </div>
+                        <div class="main-text">
+                            <h3>Ремонт</h3>
+                            <p class="block-shag1-text">
+                                Проведем все согласованные работы, пропишем рекомендации при наличии, а специалисты
+                                проконтролируют качество работ и пришлют в чат всю необходимую информацию.</p>
+                        </div>
+                    </div>
+                    <img src="./svg/strelka.svg" alt="#" class="block-icon">
+                    <div class="block-shag2">
+                        <div class="block-shag2-outer">
+                            <div class="block-shag2-inner">4</div>
+                        </div>
+                        <div class="main-text">
+                            <h3>Возврат</h3>
+                            <p class="block-shag2-text">
+                                По готовности мы свяжемся с вами и вернем готовый автомобиль в удобное место и время.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts-call" class="form">
+            <div class="form__photo"></div>
+            <form action="index.html" method="get" class="form__forma" id="form" novalidate>
+
+                <div class="form__main-form">
+                    <div class="form__photo-krug"> <img src="./img/krug-form.png" alt=""></div>
+                    <div class="main-form-text">
+
+                        <h3 class="main-form-txt">Пожалуйста, оставьте свои контакты</h3>
+                    </div>
+
+                    <div class="form__input">
+
+                        <div class="form__line-box">
+                            <div class="namee">
+                                <input type="text" id="name" class="form__input-text" name="name"
+                                    placeholder="Как к вам обращаться">
+                                <span class="form__placeholder">Имя</span>
+                            </div>
+                            <div class="form__input-box">
+                                <select name="time" class="form__input-text"
+                                    style="height: 3.1875rem; left: -0.3125rem;">
+                                    <option selected disabled value="">Выберите тип автомобиля</option>
+                                    <option value="it-spec">Седан</option>
+                                    <option value="doctor">Лифтбек</option>
+                                    <option value="bankir">Хэтчбек</option>
+                                    <option value="pred">Универсал</option>
+                                    <option value="b">Купе</option>
+                                    <option value="c">Кроссовер</option>
+                                    <option value="d">Внедорожник</option>
+                                    <option value="e">Фургон</option>
+                                    <option value="f">Пикап</option>
+                                    <option value="g">Прочее</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="form__line-box">
+                            <div class="tell">
+                                <input type="tel" id="tel" class="form__input-text" name="tel"
+                                    placeholder="Введите ваш номер телефона" required>
+                                <span class="form__placeholder">Телефон</span>
+                            </div>
+                            <div class="emaill">
+                                <input type="email"  id="email" class="form__input-text" name="email" placeholder="Нужен для связи"
+                                    required>
+                                <span class="form__placeholder">E-mail</span>
+                            </div>
+                        </div>
+                        <div class="form__line-box">
+                        </div>
+
+
+                        <div class="form__line-box">
+                            <div class="form__line-box-text">
+                                <span class="form__line-box-txt">Отправляя форму, вы соглашаетесь на сбор,
+                                    обработку<br>
+                                    и хранение ваших данных сотрудниками компании.<br>
+                                    <a href="" style="color:black;">Политика
+                                        конфиденциальности</a>
+                                </span>
+                            </div>
+                            <div class="call"> <button class="form__btn" id="btn-form" type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <section class="container-footer">
+            <div class="footer__navigation">
+                <div class="footer__text-up">
+                    <div class="footer-title">
+                        <h2
+                            style="font-family: 'Copperplate', sans-serif;font-style: normal;font-weight: bold;font-size: 2.5rem;line-height: 3.5rem;text-transform: uppercase;margin-top:0.875rem;color:white">
+                            COSMOS</h2>
+                    </div>
+                    <div class="footer__nav">
+                        <nav>
+                            <a class="footer__navig-link" href="index.html">ГЛАВНАЯ</a>
+                            <a class="footer__navig-link" href="uslugi.html">УСЛУГИ</a>
+                            <!-- CSS - уровень 2 (сложные селекторы) - Задание 1 -->
+                            <a class="footer__navig-link" onclick="location.href='#onas'">О НАС</a>
+                            <a class="footer__navig-link" onclick="location.href='#whatweknow'">ЧТО МЫ УМЕЕМ</a>
+                            <a class="footer__navig-link" onclick="location.href='#work'">КАК ЭТО РАБОТАЕТ</a>
+                            <a class="footer__navig-link" onclick="location.href='#aliex'">ПРЕИМУЩЕСТВА</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__text-down">
+                    <div class="footer-prava">
+                        <div class="footer-prava-text">
+                            2022. Все права защищены.
+                        </div>
+                    </div>
+                    <div class="footer-adress" id="contacts-sto">
+                        <div class="adress-photo">
+                            <div style="margin-right:0.5rem;margin-top:-0.2rem;color:white">Адрес:</div>
+                        </div>
+                        <div class="footer-adress-text">г. Cаранск, ул. Пролетарская, 120 с. 1</div>
+                    </div>
+                    <div class="footer-number">
+                        <div class="phone-up">
+                            <div class="photo-number">
+                                <div style="font-size: 1rem;margin-top:0.1rem;color:white;margin-right: 0.3rem;">Тел:</div>
+                            </div>
+                            <div class="text-number"><a class="nav-call"
+                                    style="font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 700;font-size: 1.375rem;line-height: 1.75rem;text-decoration: none;color:white;"
+                                    href="tel:+71231231288">8(123) 123-12-88</a></div>
+                        </div>
+                    </div>
+                    <div class="calling"> <button class="footer__btn-one" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Обратный
+                            звонок</button></div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <style>
+
+
+        .invalid {
+            border: 2px solid red;
+        }
+.error{
+    margin-top: 1.5rem;
+            font-size: 0.7rem;
+}
+        .valid {
+            border: 2px solid green;
+        }
+
+    </style>
+    <script src="form.js"></script>
+</body>
+
+</html>

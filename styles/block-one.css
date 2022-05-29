@@ -1,0 +1,140 @@
+.container-two {
+    width: 120rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/avtoservis-fon-9.jpg") no-repeat 50% / cover var(--neatural-gray);
+}
+
+.block {
+
+    display: flex;
+    margin: 6.25rem auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.block__one-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7.5rem 0 0;
+}
+
+.block__one-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-devushki {
+    width: 28.6rem;
+    max-width: 100%;
+    height: 17.125rem;
+    background: url(../img/avtoservis-fon-7.png), #C4C4C4;
+    margin-bottom: 3.375rem;
+    margin-top: 0.6rem;
+}
+
+.block__one-text-left p {
+    font-family: 'Copperplate';
+    font-weight: 700;
+    width: 20.5625rem;
+    text-align: left;
+    font-size: 1.375rem;
+    color:white;
+}
+
+.block__one-left-ticket {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    color: #FFFFFF;
+    width: 8.1875rem;
+    height: 2.5rem;
+    margin: 1.25rem 0 -4.375rem -1.25rem;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/ticket.png);
+    transition: 1s;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.block__one-left-ticket:hover {
+    transform: scale(1.2) rotate(14deg);
+}
+
+.block__one-left-ticket:hover {
+    color: blue;
+    transition: 1s;
+}
+
+.ticket-reshenie {
+    display: flex;
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    color: #FFFFFF;
+    width: 8.1875rem;
+    height: 2.5rem;
+    margin: 1.25rem 0 4.5625rem 0;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/ticket.png);
+    transition: 1s;
+}
+
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.ticket-reshenie:hover {
+    transform: scale(1.2) rotate(-14deg);
+}
+
+.ticket-reshenie:hover {
+    color: blue;
+    transition: 1s;
+}
+
+.reshenie-first,
+.reshenie-second {
+    display: flex;
+    margin-bottom: 3.75rem;
+}
+
+.text-reshenie {
+    display: flex;
+    flex-direction: column;
+    margin: -2.1875rem 0 0 2.75rem;
+}
+
+.text-reshenie-one h2 {
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color:white;
+}
+
+.block__one-right h3 {
+    font-family: 'Copperplate';
+    font-weight: 400;
+    width: 20.5625rem;
+    text-align: left;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+    color:white;
+}
+
+.text-reshenie-three {
+    margin: -0.6875rem 0 0 2.75rem;
+}

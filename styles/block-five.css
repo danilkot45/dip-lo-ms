@@ -1,0 +1,81 @@
+.container-six {
+    max-width: 100%;
+    margin: 0 auto;
+    /* height: 720px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.carusel {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.carusel .container {
+    padding: 3.4375rem 0;
+    background: rgb(3,7,37);
+    }
+
+.anim-left {
+    display: flex;
+    align-items: center;
+}
+
+.anim-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.anim-left {
+    display: flex;
+}
+
+.anim-title-text p {
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.625rem;
+    color: white;
+}
+
+.anim-text p {
+    width: 43.8125rem;
+    font-family: 'Copperplate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #2e60e7;
+    /* or 150% */
+
+}
+
+.anim-kolvo-left,
+.anim-kolvo-right {
+    margin-top: 4.1875rem;
+}
+
+.numbers {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #2e60e7;
+}
+
+
+.text-title-carusel h3 {
+    margin:0 auto;
+    font-family:  'Copperplate';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.625rem;
+    color: #2e60e7;
+}

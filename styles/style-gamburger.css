@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.header__nav {
+    position: absolute;
+    right: 36px;
+    display: block;
+}
+.navig-link:hover {
+    color: #FF8C00;
+}
+.navig-link:hover:after,
+.navig-link:focus:after {
+    width: 100%;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.navig-link:after {
+    background-color: #FF8C00;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    transition: all 2s;
+}
+.header__menu {
+    display: flex;
+	position: relative;
+	z-index: 2;
+	padding-left: 0;
+}
+.header__menu li {
+	list-style: none;
+	margin: 0px 0px 0px 36px;
+	color: #000;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+@media(max-width: 1081px){
+	.navig-link{
+		margin-left:0;
+	}
+	ul {
+		padding-left: 0;
+		}
+	.text-down {
+        width: 50%;
+        position: absolute;
+        top: 0.625rem;
+        left: 55%;
+        flex-direction: column;
+        margin-top: 0;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .adress-text {
+        font-size: 0.75rem;
+    }
+	.phone-up {
+        margin: 1.1rem auto;
+    }
+	.text-number a{
+		font-size:1.01rem;
+	}
+.header__nav {
+	display: block;
+	position: absolute;
+    top: 55px;
+    left: 10px;
+    background: black;
+    width: 100%;
+    transition: all 0.4s ease;
+	left:-100%;
+	z-index: 1;
+}
+.header__menu {
+	display: block;
+}
+.header__nav.open-menu{
+    left:0;
+}
+.header__menu li {
+	margin: 40px 0px 40px 33px;
+    font-size: 14px;
+	}
+.menu-burger__header {
+	position: absolute;
+    width: 40px;
+    height: 35px;
+	left: 0;
+   }
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background: white;
+	margin: 0 auto;
+}
+.menu-burger__header span{
+	top: 16px;
+}
+.menu-burger__header:after, .menu-burger__header:before{
+	content: '';
+}
+.menu-burger__header:after{
+	bottom: 5px;
+}
+.menu-burger__header:before{
+	top: 5px;
+}
+.menu-burger__header.open-menu span {
+	opacity:0; 
+    transition: 0.5s; 
+}
+.menu-burger__header.open-menu:before {
+	transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+}
+.menu-burger__header.open-menu:after {
+	transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+
+
+}
