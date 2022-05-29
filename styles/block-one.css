@@ -39,7 +39,7 @@
 }
 
 .block__one-text-left p {
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-weight: 700;
     width: 20.5625rem;
     text-align: left;
@@ -50,7 +50,7 @@
 .block__one-left-ticket {
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 1.125rem;
@@ -78,7 +78,7 @@
 
 .ticket-reshenie {
     display: flex;
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 1.125rem;

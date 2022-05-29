@@ -34,7 +34,7 @@
 }
 
 .anim-title-text p {
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
@@ -61,7 +61,7 @@
 
 .numbers {
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;
@@ -72,7 +72,7 @@
 
 .text-title-carusel h3 {
     margin:0 auto;
-    font-family:  'Copperplate';
+    font-family:  'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;

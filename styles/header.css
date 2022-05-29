@@ -163,7 +163,7 @@ margin-right: 50rem;
 .navig-link{
     color: white;
     text-decoration: none;
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
@@ -177,7 +177,7 @@ margin-right: 50rem;
     outline: none;
     Border: none;
     color: #FFFFFF;
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 1.125rem;
@@ -216,7 +216,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .blocks-two .text-up-btn p{
-   font-family: 'Copperplate';
+   font-family: 'CopperplateBold';
     font-weight:700;
     width: 20.5625rem;
      text-align: left;
@@ -242,7 +242,7 @@ color: #FFFFFF;
     display: flex;
 }
 .text-number a{
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 1.3rem;
@@ -260,7 +260,7 @@ color: #FFFFFF;
     background: url(../img/button-header-2.png);
     Border: none;
     color: #FFFFFF;
-    font-family: 'Copperplate';
+    font-family: 'CopperplateBold';
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
