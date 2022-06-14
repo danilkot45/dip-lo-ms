@@ -1,7 +1,6 @@
 .container-six {
     max-width: 100%;
-    margin: 0 auto;
-    /* height: 720px; */
+    margin: 5rem auto;
     overflow: hidden;
     position: relative;
 }
@@ -15,7 +14,6 @@
 }
 
 .carusel .container {
-    padding: 3.4375rem 0;
     background: rgb(3,7,37);
     }
 
@@ -43,21 +41,17 @@
 }
 
 .anim-text p {
-    width: 43.8125rem;
     font-family: 'Copperplate';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.2rem;
-    color: #2e60e7;
+    color: white;
+    height: 7rem;
     /* or 150% */
 
 }
 
-.anim-kolvo-left,
-.anim-kolvo-right {
-    margin-top: 4.1875rem;
-}
 
 .numbers {
     width: 100%;
@@ -66,7 +60,7 @@
     font-weight: 700;
     font-size: 3rem;
     line-height: 3.5rem;
-    color: #2e60e7;
+    color: white;
 }
 
 
@@ -77,5 +71,5 @@
     font-weight: 700;
     font-size: 3rem;
     line-height: 2.625rem;
-    color: #2e60e7;
+    color: white;
 }
